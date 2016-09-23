@@ -5,6 +5,8 @@ class User < ApplicationRecord
 
   # Validations
 
+  validates :username, {:scope=>[:avatar]}
+
   validates :username, presence: true
 
 end
